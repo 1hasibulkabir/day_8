@@ -81,7 +81,7 @@
             <div class="col-md-12">
                 <button type="button" data-toggle="modal" data-target="#mymodal" class="btn btn-info">Click Me</button>
             </div>
-            <ul class="nav nav-tabs nav-justified">
+            <ul class="nav nav-tabs nav-justified w-100">
                 <li class="nav-item ">
                     <a href="#home" data-toggle="tab" class="nav-link active">Home</a>
                 </li>
@@ -120,9 +120,9 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <ul class="nav nav-pills nav-justified">
+            <ul class="nav nav-pill nav-justified w-100">
                 <li class="nav-item ">
-                    <a href="#home1" data-toggle="pills" class="nav-link active">Home</a>
+                    <a href="#home1" data-toggle="pill" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about1" data-toggle="pill" class="nav-link">About</a>
@@ -154,7 +154,6 @@
         </div>
     </div>
 </section>
-
 <!-- Signin Modal -->
 <div class="modal fade" id="signmodal" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
@@ -188,13 +187,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-
             </div>
-
         </div>
-
     </div>
-
 </div>
 <!-- Button Modal -->
 <div class="modal fade" id="mymodal" data-backdrop="static" data-keyboard="false">
@@ -215,12 +210,42 @@
             <div class="modal-footer">
                 <h3>This is modal footer</h3>
             </div>
-
         </div>
-
     </div>
-
 </div>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="accordion" id="citm">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#div1" data-toggle="collapse">Click Me</a>
+                    </div>
+                    <div id="div1" class="collapse show" data-parent="#citm">
+                        <div class="card-body">
+                            <h1>This is heading</h1>
+                            <p>This is paragraph</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#div2" data-toggle="collapse">Click Me</a>
+                    </div>
+                    <div id="div2" class="collapse" data-parent="#citm">
+                        <div class="card-body">
+                            <h1>This is heading 2</h1>
+                            <p>This is paragraph 2</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
